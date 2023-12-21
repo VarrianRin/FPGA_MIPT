@@ -104,7 +104,7 @@ module full_adderV_tb;
 endmodule
 ```
 
-### Резуьтаты синтеза:
+### Результаты синтеза:
 ![image](https://github.com/VarrianRin/FPGA_MIPT/assets/55803852/fb8957ac-03f4-4464-b28d-256eacc5190c)
 
 
@@ -199,7 +199,7 @@ end
 endmodule
 ```
 
-### Резуьтаты синтеза:
+### Результаты синтеза:
 ![image](https://github.com/VarrianRin/FPGA_MIPT/assets/55803852/d950adbe-8946-4507-bc2f-6f3676c1ef54)
 
 
