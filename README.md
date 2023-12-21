@@ -1,2 +1,2 @@
-# FPGA_MIPT
-homework on FPGA classes at MIPT
+# Verilog MIPT
+homework on Verilog classes at MIPT
