@@ -1,0 +1,39 @@
+`timescale 1ns / 1ns 
+module lshift_4b_reg_tb;
+
+reg d, rstn, clk;
+
+wire [3:0] out;
+integer i;
+
+reg [2:0] dly
+
+
+
+lshift_4b_reg lshift_4b_reg_DUT (.d(d), .clk(clk), .rstn(rstn), .out(out));
+
+always #5 clk = ~clk
+
+initial begin
+
+#10
+{d, rstn, clk} <= 0
+
+#10 rstn <= 1;
+
+
+for (i = 0; i < 20; i = i + 1) begin
+	
+	@(posedge clk) d <= $random;
+	
+end	
+	
+#10 $finish
+	
+end
+
+$stop;
+
+end
+
+endmodule

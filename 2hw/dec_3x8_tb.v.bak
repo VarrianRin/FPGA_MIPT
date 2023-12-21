@@ -1,0 +1,28 @@
+`timescale 1ns / 1ns 
+module dec_3x8_tb;
+
+reg en;
+reg [3:0] in;
+
+wire [15:0] out;
+integer i;
+
+dec_3x8 dec_3x8_DUT (.en(en), .in(in), .out(out));
+
+initial begin
+
+#10
+en <= 0; in <= 0
+
+for (i = 0; i < 32; i = i + 1) begin
+	
+	{en, in} = i;
+	#10
+	
+end
+
+$stop;
+
+end
+
+endmodule

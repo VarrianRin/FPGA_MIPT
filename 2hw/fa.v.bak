@@ -1,0 +1,11 @@
+module fa (input a, b, cin
+			  output sum, cout);
+			  
+always @ (a or b or cin) begin
+	
+	{cout, sum} = a + b + cin;
+
+end
+
+endmodule	
+			  
